@@ -1,7 +1,7 @@
 # WIP
-<!-- # Guía de Migración
+# Guide de migration
 
-Esta guía tiene como objetivo ayudarte a migrar de la versión 1 a las versiones más recientes de TresJS 🤩✨.
+Ce guide à pour objectif de vous aider à faire la migration de la version 1 aux versions les plus récentes de TresJS 🤩✨.
 
 ::: code-group
 
@@ -19,17 +19,21 @@ yarn upgrade @tresjs/core
 
 :::
 
-## Novedades
+## Nouveautés
 
 ### Vue Custom Renderer
 
-**TresJS** es ahora un [Vue Custom Renderer](https://vuejs.org/api/custom-renderer.html#createrenderer) 🎉 que se encuentra dentro de un componente envolvente `TresCanvas` que se encarga de crear el `WebGLRenderer` y la `Scene` por ti, y crear una **nueva instancia de la aplicación Vue** para renderizar la escena.
+**TresJS** est pour le moment une [Vue Custom Renderer](https://vuejs.org/api/custom-renderer.html#createrenderer) 🎉 que l'on retrouve dans un composant englobant `TresCanvas` qui se charge de créer pour vous le `WebGLRenderer` et la `Scene`, et de créer une **nouvelle instance de l'application Vue** pour retourner la scène.
 
 ### Soporte de TypeScript e Intellisense 🦾
 
 ![TresJS Intellisense](/v2-intellisense.gif)
 
-Esta fue probablemente la característica más **solicitada para TresJS**. Ahora los componentes de Tres funcionan con Volar y proporcionan intellisense de tipos.
+Il s'agit probablement de la caractéristique **la plus attendue de TresJS**. Désormais, les composants Tres fonctionnent avec Volar et fournissent un type intellisense.
+
+<!-- WIP
+**TresJS** now generates type declaration on build time for all the components based of the catalog from ThreeJS. This means that you can use all the components from ThreeJS and get type intellisense for them.
+
 
 **TresJS** ahora genera declaraciones de tipos en tiempo de compilación para todos los componentes basados en el catálogo de ThreeJS. Esto significa que puedes usar todos los componentes de ThreeJS y obtener intellisense de tipos para ellos.
 
